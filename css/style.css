@@ -349,3 +349,31 @@ label[for] {
 .con {
   width:1370px;
 }
+
+/* 배경 */
+.page-1 > .img-box {
+    height: 800px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+/* top-bar */
+.top-bar {
+    height: 60px;
+  }
+  
+/* top-bar 로고 */
+  .top-bar > div {
+    padding: 0 30px;
+  }
+  
+  .top-bar .logo > svg {
+    display: block;
+    width: 82px;
+    height: 18px;
+  }
+  
+  .top-bar .logo:hover > svg {
+    fill:gold;
+  }  
