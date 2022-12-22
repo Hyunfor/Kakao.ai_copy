@@ -359,18 +359,25 @@ label[for] {
     background-size: cover;
     background-repeat: no-repeat;
   }
-
-/* top-bar */
-.top-bar {
+  
+  /* top-bar st */
+  .top-bar {
     height: 60px;
-    position: fixed;
+    position:fixed;
     width: 100%;
     left:0;
     top:0;
     color:white;
+    transition: background-color .3s;
   }
   
-/* top-bar 로고 */
+  .top-bar:hover {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 4px 6px rgb(0 0 0 / 10%);
+    border-bottom:1px solid #f2f2f2;
+  }
+  
+  /* top-bar 로고 */
   .top-bar > div {
     padding: 0 30px;
   }
@@ -382,16 +389,51 @@ label[for] {
   
   .top-bar:hover .logo > svg {
     fill:black;
+    
   }
   
-  .top-bar .btn-alliance svg {
-    fill:white;
+  /* top-bar ed */
+  
+  /* top-bar-manu st */
+  
+  .top-bar:hover .menu-box-1 {
+    color:#666666;
   }
-
-  .top-bar:hover .btn-alliance svg {
-    fill:black;
+  
+  .top-bar .menu-box-1 {
+    margin-left: 50px;
   }
-
-  .top-bar:hover .menu-box-1, .top-bar:hover .btn-alliance {
+  
+  .top-bar .menu-box-1 > ul > li > a {
+    padding: 0 20px;
+    font-size: 14px;
+  }
+  
+  .top-bar .menu-box-1 > ul > li:hover > a{
     color:black;
   }
+  
+  /* top-bar-manu ed */
+  
+  /* top-bar-manu-alliance st */
+  
+  .top-bar:hover .btn-alliance {
+    color:black;
+  }
+  
+  .top-bar .btn-alliance > span:first-child > svg {
+    fill:white;
+    width:10px; 
+    height:10px;
+  }
+  
+  .top-bar:hover .btn-alliance > span:first-child > svg {
+    fill:black;
+  }
+  
+  
+  .top-bar .btn-alliance > span:last-child {
+    margin-left:10px;
+  }
+  
+  /* top-bar-manu-alliance ed */
