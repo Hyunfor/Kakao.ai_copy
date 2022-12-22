@@ -344,6 +344,8 @@ label[for] {
 /* 고정형 .con 시작 */
 .con-min-width {
   min-width:1370px;
+/*  임시  */
+  min-width:330px;  
 }
 
 .con {
@@ -361,6 +363,11 @@ label[for] {
 /* top-bar */
 .top-bar {
     height: 60px;
+    position: fixed;
+    width: 100%;
+    left:0;
+    top:0;
+    color:white;
   }
   
 /* top-bar 로고 */
@@ -369,11 +376,22 @@ label[for] {
   }
   
   .top-bar .logo > svg {
-    display: block;
     width: 82px;
     height: 18px;
   }
   
-  .top-bar .logo:hover > svg {
-    fill:gold;
-  }  
+  .top-bar:hover .logo > svg {
+    fill:black;
+  }
+  
+  .top-bar .btn-alliance svg {
+    fill:white;
+  }
+
+  .top-bar:hover .btn-alliance svg {
+    fill:black;
+  }
+
+  .top-bar:hover .menu-box-1, .top-bar:hover .btn-alliance {
+    color:black;
+  }
